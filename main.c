@@ -3,15 +3,18 @@
 
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
-	int main(void){
-		int input_int;
-		float input_float;
+	int main(void)
+	{
+		char c;
+		int i;
 		
-		printf("enter an integer : ");
-		scanf("%f", &input_float);
+		printf("input a number :");
+		scanf("%c", &c);
 		
-		printf("integer : %d, float : %f\n", input_int, input_float);
+		i=c-'0';
+		printf("The input number ASCII is %i\n", c);
+		printf("The input number is %i\n", i);
 		
-	system("PAUSE");
+		system("PAUSE");
 	return 0;
 }
